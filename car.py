@@ -18,6 +18,7 @@ class Battery(ABC):
 
 # Serviceable接口
 class Serviceable(ABC):
+    @abstractmethod
     def needs_service(self) -> bool:
         pass
 
